@@ -1,6 +1,6 @@
 # AvoidTypos
 
-Example application for story: [https://puddleofcode.com/story/how-to-use-elixir-s-compiler-to-avoid-typos][https://puddleofcode.com/story/how-to-use-elixir-s-compiler-to-avoid-typos]
+Example application for story: [https://puddleofcode.com/story/how-to-use-elixir-s-compiler-to-avoid-typos](https://puddleofcode.com/story/how-to-use-elixir-s-compiler-to-avoid-typos)
 
 - [generic version](https://github.com/fazibear/avoiding_typos/tree/master)
 
