@@ -5,7 +5,7 @@ defmodule AppTwo do
 
   require Logger
 
-  def hello do
-    Logger.info("Hello from AppTwo")
+  def hello(payload) do
+    Logger.info("Hello from AppTwo: #{inspect(payload)}")
   end
 end

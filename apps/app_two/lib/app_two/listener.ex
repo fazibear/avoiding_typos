@@ -4,8 +4,8 @@ defmodule AppTwo.Listener do
   """
   use Dispatcher.Listener
 
-  def on_message(%{name: "app_two_hello"}) do
-    AppTwo.hello()
+  def on_message(%{name: "app_two_hello", payload: payload}) do
+    AppTwo.hello(payload)
   end
 
   def on_message(action), do: action
