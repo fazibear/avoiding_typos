@@ -1,4 +1,4 @@
-# UseCompiler
+# AvoidingTypos
 
 **TODO: Add description**
 
