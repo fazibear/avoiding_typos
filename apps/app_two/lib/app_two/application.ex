@@ -7,7 +7,7 @@ defmodule AppTwo.Application do
 
   def start(_type, _args) do
     children = [
-      AppTwo.Listener,
+      AppTwo.Listener
       # Starts a worker by calling: AppTwo.Worker.start_link(arg)
       # {AppTwo.Worker, arg}
     ]

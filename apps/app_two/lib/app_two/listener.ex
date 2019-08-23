@@ -4,9 +4,11 @@ defmodule AppTwo.Listener do
   """
   use Dispatcher.Listener
 
-  def on_message(%{name: "app_two_hello"}) do
-    AppTwo.hello()
+  app_two_hello(payload) do
+    AppTwo.hello(payload)
   end
 
-  def on_message(action), do: action
+  other(_, _) do
+    :nothing
+  end
 end

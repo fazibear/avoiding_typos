@@ -7,7 +7,7 @@ defmodule Dispatcher.Application do
 
   def start(_type, _args) do
     children = [
-      Dispatcher,
+      Dispatcher
       # Starts a worker by calling: Dispatcher.Worker.start_link(arg)
       # {Dispatcher.Worker, arg}
     ]

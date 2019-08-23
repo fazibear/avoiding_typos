@@ -10,10 +10,6 @@ defmodule Dispatcher do
     GenStage.start_link(__MODULE__, [], name: __MODULE__)
   end
 
-  def message(message) do
-    GenStage.cast(__MODULE__, message)
-  end
-
   def init(_) do
     {:producer, %{enabled: true}, dispatcher: GenStage.BroadcastDispatcher}
   end
@@ -26,7 +22,7 @@ defmodule Dispatcher do
     {:noreply, [], %{state | enabled: true}}
   end
 
-  def handle_cast(message, %{enabled: true} = state) when is_map(message) do
+  def handle_cast({:message, message}, %{enabled: true} = state) when is_map(message) do
     Logger.info("Dispatch message: #{inspect(message)}")
     {:noreply, [message], state}
   end
